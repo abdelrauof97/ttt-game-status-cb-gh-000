@@ -23,12 +23,7 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-
-  if WIN_COMBINATIONS.any? { |x| x.all? { |y| board[y] =="X" }} 
-    return true
-  elsif WIN_COMBINATIONS.any? { |x| x.all? { |y| board[y] =="O" }}
-    return true
-  end
+  WIN_COMBINATIONS.each
 end
 
 
