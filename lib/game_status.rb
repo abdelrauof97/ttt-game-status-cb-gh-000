@@ -54,5 +54,5 @@ end
 
 def winner?(board)
   if winning_combo = won?(board)
-    (winning_combo.first)
+    board[winning_combo.first]
 puts winner?(board)
