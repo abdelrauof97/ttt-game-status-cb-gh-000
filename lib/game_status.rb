@@ -50,10 +50,8 @@ def winner?(board)
       return false
     elsif WIN_COMBINATIONS.any? { |x| x.all? { |y| board[y] =="X" }}
       puts "X"
-      return WIN_COMBINATIONS.select{ |x|  x.all?{|y| board[y]=="X"}  }
     elsif WIN_COMBINATIONS.any? { |x| x.all? { |y| board[y] =="O" }}
       puts "O"
-      return WIN_COMBINATIONS.select{ |x|  x.all?{|y| board[y]=="O"}  }
     else
       return nil
     end
