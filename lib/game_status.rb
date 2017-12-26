@@ -23,7 +23,8 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  WIN_COMBINATIONS.detect{
+  WIN_COMBINATIONS.detect{ |combo|
+  board[combo[0]] == 
 end
 
 
