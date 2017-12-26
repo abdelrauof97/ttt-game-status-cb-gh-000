@@ -23,7 +23,7 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-  WIN_COMBINATIONS.each
+  WIN_COMBINATIONS.detect{
 end
 
 
