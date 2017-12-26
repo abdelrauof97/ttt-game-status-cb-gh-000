@@ -57,4 +57,4 @@ def winner?(board)
     board[winning_combo.first]
   end 
 end
-puts winner?(board)
+ winner?(board)
