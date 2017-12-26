@@ -53,15 +53,6 @@ end
 
 
 def winner?(board)
-    if full?(board) || board.all? {|x| x == " "} || board.all? {|x| x == ""}
-      return false
-    elsif WIN_COMBINATIONS.any? { |x| x.all? { |y| board[y] =="X" }}
-      puts "X"
-    elsif WIN_COMBINATIONS.any? { |x| x.all? { |y| board[y] =="O" }}
-      puts "O"
-    else
-      return nil
-    end
   
 end
 
